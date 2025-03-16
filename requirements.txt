@@ -1,0 +1,26 @@
+accelerate==1.4.0
+deepspeed==0.15.1
+einops==0.7.0
+git+https://github.com/huggingface/diffusers.git
+huggingface-hub==0.27.0
+transformers==4.44.2
+xformers==0.0.27
+imageio==2.34.0
+imageio-ffmpeg==0.4.9
+opencv-python==4.9.0.80
+decord==0.6.0
+omegaconf==2.3.0
+safetensors
+pytorch-lightning==2.5.0.post0
+clean-fid
+triton
+pyarrow
+blobfile
+wandb
+tensorboard
+torch_fidelity
+git+https://github.com/openai/CLIP.git
+git+https://github.com/boomb0om/text2image-benchmark.git
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.3.1
+torchvision==0.18.1

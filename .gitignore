@@ -1,0 +1,37 @@
+wandb*/
+tensorboard*/
+*debug*
+debugs/
+outputs*/
+samples*/
+__pycache__/
+ossutil_output/
+.ossutil_checkpoint/
+.cache/
+
+# scripts/*
+
+*.ipynb
+*.safetensors
+*.ckpt
+
+models/*
+
+converted/
+logs/
+# metrics/
+
+samples*/
+prompts/
+mu_sigma_real.npz
+*.log
+
+pretrained_maskgit/
+*.png
+results/
+fid_stats_imagenet256_guided_diffusion.npz
+VIRTUAL_imagenet256_labeled.npz
+slurm_log/
+
+MaskGit_src/samples*/
+geneval/
