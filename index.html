@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
+  <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="DIMO">
+  <meta property="og:title" content="DI[M]O: Distilling Masked Diffusion Models into One-step Generator"/>
+  <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
+  <meta property="og:url" content="https://yuanzhi-zhu.github.io/DiffPIR/"/>
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
+  <meta property="og:image" content="static/image/illustration.png" />
+  <meta property="og:image:width" content="1200"/>
+  <meta property="og:image:height" content="630"/>
+
+
+  <meta name="twitter:title" content="DI[M]O: Distilling Masked Diffusion Models into One-step Generator">
+  <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/illustration.png">
+  <meta name="twitter:card" content="illustration_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <!-- <meta name="keywords" content="KEYWORDS SHOULD BE PLACED HERE"> -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+  <title>DI[M]O: Distilling Masked Diffusion Models into One-step Generator</title>
+  <link rel="icon" type="image/x-icon" href="../../icon.jpg">
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+  rel="stylesheet">
+
+  <link rel="stylesheet" href="static/css/bulma.min.css">
+  <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+  href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
+  <script defer src="static/js/fontawesome.all.min.js"></script>
+  <script src="static/js/bulma-carousel.min.js"></script>
+  <script src="static/js/bulma-slider.min.js"></script>
+  <script src="static/js/index.js"></script>
+</head>
+
+
+<body>
+<script type="text/javascript" async
+  src="https://polyfill.io/v3/polyfill.min.js?features=es6">
+</script>
+<script type="text/javascript" async
+  id="MathJax-script" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+<section class="hero">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered">
+        <div class="column has-text-centered">
+          <h1 class="title is-1 publication-title"><p>DI[M]O: Distilling Masked Diffusion Models into One-step Generator</p></h1>
+          <div class="is-size-5 publication-authors">
+            <!-- Paper authors -->
+            <span class="author-block">
+                <a href="https://yuanzhi-zhu.github.io/about/" target="_blank" style="color:rgb(255, 125, 0) !important;">Yuanzhi Zhu</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="https://triocrossing.github.io/" target="_blank" style="color:rgb(255, 125, 0) !important;">Xi Wang</a><sup>1</sup>,
+            </span>
+            <span class="author-block">
+                <a href="https://stelat.eu/" target="_blank" style="color:rgb(255, 125, 0) !important;">Stéphane Lathuilière</a><sup>2</sup>,
+            </span>
+            <span class="author-block">
+                <a href="https://vicky.kalogeiton.info/" target="_blank" style="color:rgb(255, 125, 0) !important;">Vicky Kalogeiton</a><sup>1</sup>
+            </span>
+          </div>
+
+          <div class="is-size-5 publication-institutes">
+            <span class="institute-block"><sup>1</sup>LIX, École Polytechnique, CNRS, IPP</span>
+            <span class="institute-block"><sup>2</sup>Inria, Univ. Grenoble Alpes, CNRS, LJK</span>
+            <!-- <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span> -->
+          </div>
+
+          <div class="column has-text-centered">
+            <div class="publication-links">
+              <!-- Arxiv PDF link -->
+              <!-- <span class="link-block">
+                <a href="https://arxiv.org/pdf/" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark"
+                  style="padding: 10px 20px; color: white; background-color: #ff6a00af; border-radius: 20px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                    <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                    </span>
+                    <span>Paper</span>
+                </a>
+              </span> -->
+
+              <!-- ArXiv abstract Link -->
+              <span class="link-block">
+                <a href="https://arxiv.org/abs/" target="_blank"
+                class="external-link button is-normal is-rounded is-dark"
+                style="padding: 10px 20px; color: white; background-color: #ff6a00af; border-radius: 20px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                <span class="icon">
+                  <i class="ai ai-arxiv"></i>
+                </span>
+                <span>arXiv</span>
+              </a>
+              </span>
+
+              <!-- Github link -->
+              <span class="link-block">
+                <a href="https://github.com/yuanzhi-zhu/DIMO" target="_blank"
+                class="external-link button is-normal is-rounded is-dark"
+                style="padding: 10px 20px; color: white; background-color: #ff6a00af; border-radius: 20px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
+                <span class="icon">
+                  <i class="fab fa-github"></i>
+                </span>
+                <span>Code</span>
+              </a>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Teaser video -->
+<section class="hero teaser">
+  <div class="container is-max-desktop">
+    <div class="hero-body">
+      <!-- <video id="teaser" autoplay muted loop playsinline height="100%"> -->
+      <video id="tree" autoplay controls muted loop height="100%">
+        <source src="./static/images/DIMO.mp4" type="video/mp4">
+      </video>
+      <!-- <h2 class="subtitle has-text-centered">
+      </h2> -->
+    </div>
+  </div>
+</section>
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Masked Diffusion Models (MDMs) have emerged as a powerful generative modeling technique. Despite their remarkable results, they typically suffer from slow inference with several steps. In this paper, we propose DI[M]O, a novel approach that distills masked diffusion models into a one-step generator. 
+            DI[M]O addresses two key challenges: (1) the intractability of using intermediate-step information for one-step generation, which we solve through token-level distribution matching that optimizes model output logits by an 'on-policy framework' with the help of an auxiliary model; and (2) the lack of entropy in the initial distribution, which we address through a token initialization strategy that injects randomness while maintaining similarity to teacher training distribution. 
+            We show DI[M]O's effectiveness on both class-conditional and text-conditional image generation, impressively achieving performance competitive to multi-step teacher outputs while drastically reducing inference time. To our knowledge, we are the first to successfully achieve one-step distillation of masked diffusion models and the first to apply discrete distillation to text-to-image generation, opening new paths for efficient generative modeling. 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+
+<!-- Method -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">DIMO Mwthod Overview</h2>
+      </div>
+    </div>
+  </div>
+  <div class="hero-body">
+    <div class="container">
+      <div class="item">
+        <!-- Main image -->
+        <img src="static/images/illustration.png" alt="illustration"/>
+        <h2 class="subtitle has-text-justified">
+          <p>
+          <strong>DI[M]O Pipeline.</strong>
+          Our method distills a costly multi-step MDM teacher into a one-step generator.
+          Given \( x_{\text{init}} \) sampled using our proposed token initialization strategy,
+          the one-step generator (student \( \theta \)) produces logits \( z_\theta \),
+          from which image token sequence \( x_{\theta}=\{x_{\theta}^i\}_{i=1}^{L} \) are sampled.
+          These tokens are then processed to obtain an intermediate state \( \tilde{x}_t \)
+          through a forward mask diffusion process.
+          For each intermediate state \( \tilde{x}_t \), we update the one-step generator \( \theta \)
+          and auxiliary model \( \psi \) alternately: the one-step generator is optimized
+          by minimizing the conditional divergence \( D(p_\phi || p_\psi)(\tilde{x}_t) \)
+          at <em>token-level</em>, while the auxiliary model is trained using a cross-entropy loss
+          to model the distribution of generated tokens \( x_{\theta} \)
+          and to form the gradient to update \( \theta \). The teacher \( \phi \) is frozen during training.
+          The detailed algorithm is shown in the figure below.
+          </p>
+        </h2>
+        <!-- End main image -->
+      </div>
+    </div>
+  </div>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <!-- <h2 class="title is-3 has-text-centered">Method Overview</h2> -->
+        <!-- Method -->
+        <div class="content has-text-centered" style="margin-top: -10px;">
+          <img src="./static/images/algorithm.png" alt="Core Algorithm" style="width: 80%;">
+        </div>
+        <div class="content has-text-justified" style="margin-top: -30px;">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Visual Comparison -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Visual Comparison</h2>
+        <!-- Comparison Figure -->
+        <div class="content has-text-centered" style="margin-top: -10px;">
+          <img src="./static/images/comparison.png" alt="Visual Comparison of Different Initialization Strategies and Teacher Model">
+        </div>
+        <div class="content has-text-justified" style="margin-top: -25px;">
+          <p>
+            <strong>ImageNet generation comparison of different initialization strategies and teacher model.</strong> One-step generated images from the generator trained with different \( r_\text{init} \) in comparison with teacher generation with 16 sampling steps.  
+            The class labels of the samples from top to bottom are <code>388</code>, <code>979</code>, and <code>207</code> respectively.
+          </p>
+        </div>
+        <!-- Comparison Figure -->
+        <div class="content has-text-centered" style="margin-top: 10px;">
+          <img src="./static/images/t2i_comparison.jpg" alt="Text-to-image Visual Comparison of Different Initialization Strategies and Teacher Model">
+        </div>
+        <div class="content has-text-justified" style="margin-top: -25px;">
+          <p>
+            <strong>Text-to-image generation comparison between one-step student and teacher model with different sampling steps.</strong>
+            Comparison with the teacher on different steps, we see clearly that the teacher model's results drop very quickly when reducing the sampling steps (e.g., around 4 steps).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- Quantitative Results -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">Quantitative Results</h2>
+        <!-- ImageNet Generation Quantitative Results -->
+        <div class="content has-text-centered" style="margin-top: -10px;">
+          <img src="./static/images/imagenet_result.png" alt="ImageNet Generation Quantitative Results">
+        </div>
+        <div class="content has-text-justified" style="margin-top: -25px;">
+          <p>
+            <strong>Class-conditional image generation on ImageNet 256×256 benchmark.</strong> <sup>*</sup> denotes numbers estimated from the original plot.
+          </p>
+        </div>
+        <!-- T2I Generation Quantitative Results -->
+        <div class="content has-text-centered" style="margin-top: 10px;">
+          <img src="./static/images/hpsv2_result.png" alt="T2I Generation Quantitative Results" style="width: 75%;">
+        </div>
+        <div class="content has-text-justified" style="margin-top: -25px;">
+          <p>
+            <strong>Comparison of text-to-image generation methods on HPS v2.0 benchmark.</strong> Scores are collected from <a href="https://github.com/tgxs002/HPSv2" target="_blank">https://github.com/tgxs002/HPSv2</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- More Visualizations -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-3 has-text-centered">More Visualizations</h2>
+        <!-- meissonic qualitative Results -->
+        <div class="content has-text-centered" style="margin-top: 10px;">
+          <img src="./static/images/qulitative_meissonics.jpg" alt="meissonic qualitative">
+        </div>
+        <div class="content has-text-justified" style="margin-top: -25px;">
+          <p>
+            <strong>Additional one-step text-to-image generation results.</strong> 
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!-- BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>Coming soon...</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
+
+<!-- <section class="section" id="Acknowledgments">
+  <div class="container is-max-desktop content">
+    <h2>Acknowledgments</h2>
+    <p>This work was partly supported by the ETH Zurich General Fund (OK), the Alexander von Humboldt Foundation and the Huawei Fund.</p>
+  </div>
+</section> -->
+
+<footer class="footer">
+  <div class="container">
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This page was built and modified based on <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a>.
+            <br> 
+            This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Statcounter tracking code -->
+  
+<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
+
+    <!-- End of Statcounter Code -->
+
+</body>
+</html>
