@@ -4,8 +4,8 @@
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
-  <meta name="description" content="DIMO">
-  <meta property="og:title" content="DI[M]O: Distilling Masked Diffusion Models into One-step Generator"/>
+  <meta name="description" content="DiMO">
+  <meta property="og:title" content="Di[M]O: Distilling Masked Diffusion Models into One-step Generator"/>
   <meta property="og:description" content="SOCIAL MEDIA DESCRIPTION TAG TAG"/>
   <meta property="og:url" content="https://yuanzhi-zhu.github.io/DiffPIR/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
@@ -14,7 +14,7 @@
   <meta property="og:image:height" content="630"/>
 
 
-  <meta name="twitter:title" content="DI[M]O: Distilling Masked Diffusion Models into One-step Generator">
+  <meta name="twitter:title" content="Di[M]O: Distilling Masked Diffusion Models into One-step Generator">
   <meta name="twitter:description" content="TWITTER BANNER DESCRIPTION META TAG">
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
   <meta name="twitter:image" content="static/images/illustration.png">
@@ -24,7 +24,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title>DI[M]O: Distilling Masked Diffusion Models into One-step Generator</title>
+  <title>Di[M]O: Distilling Masked Diffusion Models into One-step Generator</title>
   <link rel="icon" type="image/x-icon" href="../../icon.jpg">
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
@@ -58,7 +58,7 @@
     <div class="container is-max-desktop">
       <div class="columns is-centered">
         <div class="column has-text-centered">
-          <h1 class="title is-1 publication-title"><p>DI[M]O: Distilling Masked Diffusion Models into One-step Generator</p></h1>
+          <h1 class="title is-1 publication-title"><p>Di[M]O: Distilling Masked Diffusion Models into One-step Generator</p></h1>
           <div class="is-size-5 publication-authors">
             <!-- Paper authors -->
             <span class="author-block">
@@ -109,7 +109,7 @@
 
               <!-- Github link -->
               <span class="link-block">
-                <a href="https://github.com/yuanzhi-zhu/DIMO" target="_blank"
+                <a href="https://github.com/yuanzhi-zhu/DiMO" target="_blank"
                 class="external-link button is-normal is-rounded is-dark"
                 style="padding: 10px 20px; color: white; background-color: #ff6a00af; border-radius: 20px; box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">
                 <span class="icon">
@@ -149,9 +149,9 @@
         <h2 class="title is-3">Abstract</h2>
         <div class="content has-text-justified">
           <p>
-            Masked Diffusion Models (MDMs) have emerged as a powerful generative modeling technique. Despite their remarkable results, they typically suffer from slow inference with several steps. In this paper, we propose DI[M]O, a novel approach that distills masked diffusion models into a one-step generator. 
-            DI[M]O addresses two key challenges: (1) the intractability of using intermediate-step information for one-step generation, which we solve through token-level distribution matching that optimizes model output logits by an 'on-policy framework' with the help of an auxiliary model; and (2) the lack of entropy in the initial distribution, which we address through a token initialization strategy that injects randomness while maintaining similarity to teacher training distribution. 
-            We show DI[M]O's effectiveness on both class-conditional and text-conditional image generation, impressively achieving performance competitive to multi-step teacher outputs while drastically reducing inference time. To our knowledge, we are the first to successfully achieve one-step distillation of masked diffusion models and the first to apply discrete distillation to text-to-image generation, opening new paths for efficient generative modeling. 
+            Masked Diffusion Models (MDMs) have emerged as a powerful generative modeling technique. Despite their remarkable results, they typically suffer from slow inference with several steps. In this paper, we propose Di[M]O, a novel approach that distills masked diffusion models into a one-step generator. 
+            Di[M]O addresses two key challenges: (1) the intractability of using intermediate-step information for one-step generation, which we solve through token-level distribution matching that optimizes model output logits by an 'on-policy framework' with the help of an auxiliary model; and (2) the lack of entropy in the initial distribution, which we address through a token initialization strategy that injects randomness while maintaining similarity to teacher training distribution. 
+            We show Di[M]O's effectiveness on both class-conditional and text-conditional image generation, impressively achieving performance competitive to multi-step teacher outputs while drastically reducing inference time. To our knowledge, we are the first to successfully achieve one-step distillation of masked diffusion models and the first to apply discrete distillation to text-to-image generation, opening new paths for efficient generative modeling. 
           </p>
         </div>
       </div>
@@ -166,7 +166,7 @@
   <div class="container is-max-desktop">
     <div class="columns is-centered">
       <div class="column is-four-fifths">
-        <h2 class="title is-3 has-text-centered">DIMO Method Overview</h2>
+        <h2 class="title is-3 has-text-centered">DiMO Method Overview</h2>
       </div>
     </div>
   </div>
@@ -177,7 +177,7 @@
         <img src="static/images/illustration.png" alt="illustration"/>
         <h2 class="subtitle has-text-justified">
           <p>
-          <strong>DI[M]O Pipeline.</strong>
+          <strong>Di[M]O Pipeline.</strong>
           Our method distills a costly multi-step MDM teacher into a one-step generator.
           Given \( x_{\text{init}} \) sampled using our proposed token initialization strategy,
           the one-step generator (student \( \theta \)) produces logits \( z_\theta \),
