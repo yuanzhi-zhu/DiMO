@@ -2,6 +2,7 @@
 <a href='https://yuanzhi-zhu.github.io/DiMO/'><img src='https://img.shields.io/badge/Project-Page-Green'></a>
 <a href='https://arxiv.org/abs/2503.15457'><img src='https://img.shields.io/badge/Di[M]O-Arxiv-red'></a>
 <a href='https://huggingface.co/Yuanzhi/DiMO'><img src='https://img.shields.io/badge/🤗HuggingFace-Models-orange'></a>
+<a href='https://www.alphaxiv.org/overview/2503.15457'><img src='https://img.shields.io/badge/alphaXiv-Blog-blue'></a>
 
 
 ## TLDR
@@ -18,14 +19,14 @@ pip install -r requirements.txt
 
 ## Inference Code
 
-### Download the Distilled Models
+#### Download the Distilled Models
 ```bash
 # pwd
 # /path/to/DiMO
 huggingface-cli download Yuanzhi/DiMO --local-dir models
 ```
 
-### Sample Images MaskGit
+#### Sample Images MaskGit
 ```bash
 network_dir="./models/maskgit"
 CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 sample_MaskGit.py \
@@ -35,7 +36,7 @@ CUDA_VISIBLE_DEVICES=0 torchrun --nproc_per_node=1 sample_MaskGit.py \
     --nb_sample 64
 ```
 
-### Sample Images Meissonic
+#### Sample Images Meissonic
 ```bash
 network_dir='./models/meissonic'
 CUDA_VISIBLE_DEVICES=0 torchrun \
