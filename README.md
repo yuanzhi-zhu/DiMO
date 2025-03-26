@@ -4,7 +4,6 @@
 <a href='https://huggingface.co/Yuanzhi/DiMO'><img src='https://img.shields.io/badge/🤗HuggingFace-Models-orange'></a>
 <a href='https://www.alphaxiv.org/overview/2503.15457'><img src='https://img.shields.io/badge/alphaXiv-Blog-blue'></a>
 
-
 ## TLDR
 We develop algorithm to distill MDMs into one-step generator, by matching the output distribution of teacher and student model.
 <img width="1385" alt="image" src="https://yuanzhi-zhu.github.io/DiMO/static/images/illustration.png" />
@@ -65,3 +64,5 @@ If you find this repo helpful, please cite:
 
 ## Acknowledgments
 ```This work was supported by ANR-22-CE23-0007, ANR-22-CE39-0016, Hi!Paris grant and fellowship, DATAIA Convergence Institute as part of the “Programme d'Investissement d'Avenir” (ANR-17-CONV-0003) operated by Ecole Polytechnique, IP Paris, and was granted access to the IDRIS High-Performance Computing (HPC) resources under the allocation 2024-AD011014300R1 and 2025-AD011015894 made by GENCI and mesoGIP of IP Paris. We also sincerely thank Nacereddine Laddaoui for the help with infrastructure, Haoge Deng and Yao Teng for their insightful discussions that contributed to this work. We are also grateful to Nicolas Dufour, Robin Courant, and Lucas Degeorge for their meticulous proofreading.```
+
+This codebase is based on the [MaskGit PyTorch](https://github.com/valeoai/Halton-MaskGIT/tree/v1.0) and [Meissonic](https://github.com/viiika/Meissonic/).
