@@ -25,7 +25,6 @@ import numpy as np
 from PIL import Image
 import io
 
-import pandas as pd
 import pyarrow.parquet as pq
 import re
 

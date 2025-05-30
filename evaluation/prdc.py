@@ -236,6 +236,7 @@ if __name__ == "__main__":
     logger.addHandler(handler)
     logger.setLevel('INFO')
 
+    # https://openaipublic.blob.core.windows.net/diffusion/jul-2021/ref_batches/imagenet/256/VIRTUAL_imagenet256_labeled.npz
     real_file_name = 'VIRTUAL_imagenet256_labeled.npz'
     real_features = np.load(real_file_name)
     # keys_name = list(real_features.keys())
