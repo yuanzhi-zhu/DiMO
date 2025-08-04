@@ -16,6 +16,22 @@ cd DiMO
 pip install -r requirements.txt
 ```
 
+## Training Code
+#### Download the pre-trained Models
+**MaskGit (pytorch)**: follow https://github.com/valeoai/Halton-MaskGIT/tree/v1.0
+
+**Messonic**: huggingface model name: "meissonflow/meissonic"
+
+#### Train MaskGit
+```bash
+bash scripts/launch_DIMO_MaskGit.sh
+```
+
+#### Train Messonic
+```bash
+bash scripts/launch_DIMO_Meissonic.sh
+```
+
 ## Inference Code
 
 #### Download the Distilled Models
