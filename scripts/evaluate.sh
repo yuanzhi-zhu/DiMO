@@ -22,7 +22,7 @@ IFS=',' read -r -a array <<< "$DID"
 num_gpu_per_node=${#array[@]}
 
 ref_dir_list=(
-    ./codes/Maskgit_fast/outputs_/MaskGit_discrete_benchmark/DDMD-GPUS2-bs64-grad_accu1-glr1e-05-flr1e-05-FKL-fix_rfix_0.6-emb_pert_fix_0.1-tcfg2.0-fcfg1.0-fcfgt1.0-r_mode_arccos-r_mode_f_arccos-reduce_sum-seed3407-bf16/2025-03-14T22-11
+    ./codes/Maskgit_fast/outputs_/MaskGit_discrete_benchmark/DiMO-GPUS2-bs64-grad_accu1-glr1e-05-flr1e-05-FKL-fix_rfix_0.6-emb_pert_fix_0.1-tcfg2.0-fcfg1.0-fcfgt1.0-r_mode_arccos-r_mode_f_arccos-reduce_sum-seed3407-bf16/2025-03-14T22-11
 )
 
 # result_dir=./codes/Maskgit_fast/outputs_MaskGit_discrete
@@ -100,9 +100,9 @@ done
 
 
 ref_dir_list=(
-    # ./codes/Maskgit_fast/outputs_MaskGit_discrete_FKL_init2/DDMD-GPUS1-bs32-grad_accu2-glr1e-05-flr1e-05-FKL-fix_r0.7-emb_pert0.0-tcfg2.0-fcfg1.0-fcfgt1.0-r_mode_arccos-r_mode_f_arccos-a_fake0.0-reduce_sum-seed42-ema0.9999-fp32/2025-02-16T09-53
-    # ./codes/Maskgit_fast/outputs_MaskGit_discrete/DDMD-GPUS1-bs32-grad_accu2-glr1e-05-flr1e-05-Jeffreys_0.-fix_r0.5-emb_pert0.3-tcfg2.0-fcfg1.0-fcfgt1.0-r_mode_arccos-r_mode_f_arccos-a_fake0.0-reduce_sum-seed42-ema0.9999-fp32/2025-02-15T06-26
-    ./codes/Maskgit_fast/outputs_Meissonic_discrete/DDMD-GPUS1-bs2-grad_accu8-glr1e-06-flr1e-06-FKL-fix_r0.5-emb_pert_fix_0.3-tcfg4.0-fcfg1.0-fcfgt1.0-r_mode_cosine-r_mode_f_cosine-a_fake0.0-reduce_sum-seed42-ema0.9999-bf16/2025-02-19T16-00
+    # ./codes/Maskgit_fast/outputs_MaskGit_discrete_FKL_init2/DiMO-GPUS1-bs32-grad_accu2-glr1e-05-flr1e-05-FKL-fix_r0.7-emb_pert0.0-tcfg2.0-fcfg1.0-fcfgt1.0-r_mode_arccos-r_mode_f_arccos-a_fake0.0-reduce_sum-seed42-ema0.9999-fp32/2025-02-16T09-53
+    # ./codes/Maskgit_fast/outputs_MaskGit_discrete/DiMO-GPUS1-bs32-grad_accu2-glr1e-05-flr1e-05-Jeffreys_0.-fix_r0.5-emb_pert0.3-tcfg2.0-fcfg1.0-fcfgt1.0-r_mode_arccos-r_mode_f_arccos-a_fake0.0-reduce_sum-seed42-ema0.9999-fp32/2025-02-15T06-26
+    ./codes/Maskgit_fast/outputs_Meissonic_discrete/DiMO-GPUS1-bs2-grad_accu8-glr1e-06-flr1e-06-FKL-fix_r0.5-emb_pert_fix_0.3-tcfg4.0-fcfg1.0-fcfgt1.0-r_mode_cosine-r_mode_f_cosine-a_fake0.0-reduce_sum-seed42-ema0.9999-bf16/2025-02-19T16-00
 )
 
 # result_dir=./codes/Maskgit_fast/outputs_MaskGit_discrete

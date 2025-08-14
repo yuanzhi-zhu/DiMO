@@ -66,6 +66,6 @@ CUDA_VISIBLE_DEVICES=$DID accelerate launch \
     --config ./configs/DIMO_Meissonic.yaml \
     --train_batch_size 2 \
     --gradient_accumulation_steps 8 \
-    # --resume_from_checkpoint_path outputs/Meissonic_discrete/DDMD-GPUS1-bs2-grad_accu8-glr1e-06-flr1e-06-FKL-fix_r0.5-emb_pert_fix_0.3-tcfg4.0-fcfg1.0-fcfgt1.0-r_mode_cosine-r_mode_f_cosine-a_fake0.0-reduce_sum-seed42-ema0.9999-bf16/2025-02-19T16-00/meta_checkpoints \
+    # --resume_from_checkpoint_path outputs/Meissonic_discrete/DiMO-GPUS1-bs2-grad_accu8-glr1e-06-flr1e-06-FKL-fix_r0.5-emb_pert_fix_0.3-tcfg4.0-fcfg1.0-fcfgt1.0-r_mode_cosine-r_mode_f_cosine-a_fake0.0-reduce_sum-seed42-ema0.9999-bf16/2025-02-19T16-00/meta_checkpoints \
     # --max_train_steps 100000 \
     # --is_debug true \

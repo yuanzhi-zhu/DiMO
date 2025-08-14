@@ -569,7 +569,7 @@ def main(
 
     # Logging folder
     run_id = datetime.datetime.now().strftime("%Y-%m-%dT%H-%M")
-    name = name + f'DDMD'
+    name = name + f'DiMO'
     name = name + f'-GPUS{torch.cuda.device_count()}-bs{train_batch_size}'
     name = name + f'-grad_accu{gradient_accumulation_steps}' if gradient_accumulation_steps > 1 else name
     name = name + f'-glr{generator_lr}-flr{fake_lr}'
@@ -973,7 +973,7 @@ def main(
                 if dm_loss_weight > 0:
                     # dmd_mask_code, dmd_mask, dmd_mask_ratio = get_mask_code(pred_code, mode=ratio_mode, value=mask_value, codebook_size=codebook_size, r_max=0.95)
                     dmd_mask_code, dmd_mask, dmd_mask_ratio = get_mask_code(pred_code, mode=ratio_mode, value=mask_value, codebook_size=codebook_size)
-                    # DDMD loss
+                    # DiMO loss
                     with torch.no_grad():
                         # calculate the teacher and auxiliary model logits
                         true_cfg_ = (1 + (true_cfg-1) * dmd_mask_ratio) if adaptive_cfg else true_cfg

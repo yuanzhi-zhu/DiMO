@@ -58,7 +58,7 @@ fake_rounds: 1
 
 mask_value: 1024
 
-# DDMD
+# DiMO
 fixed_ratio: fix_0.6       # fix ratio to be masked initial input E.g ['fix_0.6', 'fix_0.3', 'random_0.1_0.9']
 noise_emb_perturb: fix_0.1    # perturb init embedding with Gaussian noise E.g ['fix_0.', 'fix_0.3', 'warmup_15000']
 distil_loss_type: 'Jeffreys_0.'  # ['FKL', 'RKL', 'Jeffreys']

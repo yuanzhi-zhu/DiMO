@@ -1,5 +1,5 @@
 output_dir: "/Meissonic_discrete"
-wandb_project: "DDMD_meissonic"
+wandb_project: "DiMO_meissonic"
 wandb_user: ""
 
 is_debug: False
@@ -61,7 +61,7 @@ generator_lr:    1e-6
 dm_loss_weight: 1.
 fake_rounds: 1
 
-# DDMD
+# DiMO
 fixed_ratio: 0.5       # fix ratio to be masked initial input
 noise_emb_perturb: fix_0.3    # perturb init embedding with Gaussian noise E.g ['fix_0.', 'fix_0.3', 'warmup_15000']
 distil_loss_type: 'Jeffreys_0.'  # ['FKL', 'RKL', 'Jeffreys']

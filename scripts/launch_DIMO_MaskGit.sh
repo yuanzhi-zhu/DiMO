@@ -71,6 +71,6 @@ CUDA_VISIBLE_DEVICES=$DID accelerate launch \
     --train_batch_size 64 \
     --gradient_accumulation_steps 1 \
     # --is_debug true \
-    # --resume_from_checkpoint_path outputs/MaskGit_discrete_benchmark/DDMD-GPUS2-bs64-grad_accu2-glr1e-05-flr1e-05-Jeffreys_-0.2-fix_rrandom_0.1_0.9-emb_pert_fix_0.1-tcfg2.0-fcfg1.0-fcfgt1.0-r_mode_arccos-r_mode_f_arccos-reduce_sum-seed3407-bf16/2025-03-11T10-29/meta_checkpoints \
+    # --resume_from_checkpoint_path outputs/MaskGit_discrete_benchmark/DiMO-GPUS2-bs64-grad_accu2-glr1e-05-flr1e-05-Jeffreys_-0.2-fix_rrandom_0.1_0.9-emb_pert_fix_0.1-tcfg2.0-fcfg1.0-fcfgt1.0-r_mode_arccos-r_mode_f_arccos-reduce_sum-seed3407-bf16/2025-03-11T10-29/meta_checkpoints \
     # --max_train_steps 20001 \
     
